@@ -36,9 +36,13 @@ ul{
 li{
     padding-top: 15px;
 }
+a{
+    text-decoration: none;  
+    color: white
+}
 li:hover{
     list-style-type: circle;
-    color:#8f8989;
+    color:white;
 }
 section{
     padding: 100px 75px;
