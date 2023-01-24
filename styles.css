@@ -1,3 +1,66 @@
+body{
+    background-color: whitesmoke;
+}
+.top{
+    display: flex;
+    
+    font-family: dutch-mediaeval-pro, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #B4321B;
+    font-size: large;
+    margin-bottom: -50px;
+    padding:50px;
+}
+
+.leftImg{
+    margin-right: 1090px;
+}
+.name{
+    margin-right: auto;
+}
+.banner{
+    background-color: #B4321B;
+    border: 1rem solid;
+    margin-right: auto;
+    margin-bottom: 75px;
+    padding: 50px;
+}
 ul{
     list-style-type: none;
+    padding-left: 0px;
+    font-family: dutch-mediaeval-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+li{
+    padding-top: 15px;
+}
+section{
+    padding: 100px 75px;
+    flex-direction: column;
+    background-color: #B4321B;
+    border-radius: 20px;
+    border: 1rem solid black;
+    text-align: center;
+    color: white;
+    font-family: articulat-cf, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+
+
+}
+section h2{
+    font-family: dutch-mediaeval-pro, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+main{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.back_1{
+    background-image: url(/images/Diamonds.png);
 }
