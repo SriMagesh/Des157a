@@ -1,25 +1,25 @@
 body{
-    background-color: whitesmoke;
+    background-color:#c1b9b9;
+    font-family: "cabrito-didone-normal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .top{
     display: flex;
     
-    font-family: dutch-mediaeval-pro, sans-serif;
+    font-family: "cabrito-didone-normal", sans-serif;
     font-weight: 400;
-    font-style: italic;
-    color: #B4321B;
-    font-size: large;
+    font-style: normal;
+    color: black;
     margin-bottom: -50px;
     padding:50px;
-}
-
-.leftImg{
-    margin-right: 1090px;
 }
 .name{
     margin-right: auto;
 }
 .banner{
+    display: flex;
+    justify-content: space-between;
     background-color: #B4321B;
     border: 1rem solid;
     margin-right: auto;
@@ -29,12 +29,16 @@ body{
 ul{
     list-style-type: none;
     padding-left: 0px;
-    font-family: dutch-mediaeval-pro, sans-serif;
+    font-family: "cabrito-didone-normal", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 li{
     padding-top: 15px;
+}
+li:hover{
+    list-style-type: circle;
+    color:#8f8989;
 }
 section{
     padding: 100px 75px;
@@ -44,17 +48,12 @@ section{
     border: 1rem solid black;
     text-align: center;
     color: white;
-    font-family: articulat-cf, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-
-
-
-}
-section h2{
-    font-family: dutch-mediaeval-pro, sans-serif;
+    font-family: "cabrito-didone-normal", sans-serif;
     font-weight: 400;
     font-style: italic;
+
+
+
 }
 main{
     display: flex;
@@ -63,4 +62,41 @@ main{
 }
 .back_1{
     background-image: url(/images/Diamonds.png);
+}
+.banner:hover .leftImg{
+    animation-duration: 10s;
+    animation-name: slideLeft;
+}
+.banner:hover .rightImg{
+    position: relative;
+    animation-duration: 10s;
+    animation-name: slideRight;
+}
+footer{
+    list-style-type: none;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+@keyframes slideLeft {
+    0%{
+        margin-left: 0%;
+    }
+    50%{
+        margin-left: 80%;
+    }
+    100%{
+        margin-right: 0%;
+    }
+}
+@keyframes slideRight {
+    0%{
+        margin-right: 0%;
+    }
+    50%{
+        margin-right: 80%;
+    }
+    100%{
+        margin-right: 0%;
+    }
 }
