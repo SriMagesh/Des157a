@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions & DOM</title>
+</head>
+<body>
+    <div id="input">
+    </div>
+    <script>
+        var response = prompt("thinking of","");
+        var int = Math.floor(Math.random() * 4);
+        const colors = ['red','yellow','green','blue'];
+        var pickedColor = colors[int];
+        var mySentence = document.createElement("p");
+        if (response == pickedColor){
+            mySentence.innerHTML ='You are right!';
+        }else{
+            mySentence.innerHTML = 'Try again!';
+        }
+        document.getElementById("input").appendChild(mySent)
+
+    </script>
+
+</body>
+</html>
