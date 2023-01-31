@@ -32,11 +32,10 @@
 
         const colors = ['red','yellow','green', 'blue'];
         var arrLength = colors.length;
-        var pickedColor = colors[randomValue(arrLength)];
         var answer = prompt("thinking of","");
         function colorPicker(response){
             var mySentence = document.createElement("p");
-            if (response == pickedColor){
+            if (response == colors[randomValue(arrLength)]){
                 mySentence.innerHTML ='You are right!';
             }else{
                 mySentence.innerHTML = 'Try again!';
