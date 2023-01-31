@@ -10,17 +10,22 @@
     <div id="input">
     </div>
     <script>
-        var response = prompt("thinking of","");
         var int = Math.floor(Math.random() * 4);
         const colors = ['red','yellow','green','blue'];
         var pickedColor = colors[int];
-        var mySentence = document.createElement("p");
-        if (response == pickedColor){
-            mySentence.innerHTML ='You are right!';
-        }else{
-            mySentence.innerHTML = 'Try again!';
+        var answer = prompt("thinking of","");
+        function colorPicker(response){
+            var mySentence = document.createElement("p");
+            if (response == pickedColor){
+                mySentence.innerHTML ='You are right!';
+            }else{
+                mySentence.innerHTML = 'Try again!';
+            }
+            var Brendan = document.getElementById("input").appendChild(mySentence);
+            return Brendan;
+
         }
-        document.getElementById("input").appendChild(mySent)
+        console.log(colorPicker(answer));
 
     </script>
 
