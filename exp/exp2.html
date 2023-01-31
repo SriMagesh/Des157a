@@ -10,10 +10,13 @@
     <div id="input">
     </div>
     <script>
-        var int = Math.floor(Math.random() * 4);
-        const colors = ['red','yellow','green','blue'];
-        var pickedColor = colors[int];
-        var answer = prompt("thinking of","");
+        // Prompt the user for a color that the computer is "thinking of" - either red, yellow, green, or blue. Then pick a random color from an array. If the color entered by the user matches the color picked by the program, it displays the output message "You are right!". Otherwise, it displays "Try again!". (Credit: Krithika Govind)
+
+        function randomValue(number){
+            var int = Math.floor(Math.random() * number);
+            return(int);
+        }
+
         function colorPicker(response){
             var mySentence = document.createElement("p");
             if (response == pickedColor){
@@ -23,6 +26,23 @@
             }
             var Brendan = document.getElementById("input").appendChild(mySentence);
             return Brendan;
+
+        }
+
+
+        const colors = ['red','yellow','green', 'blue'];
+        var arrLength = colors.length;
+        var pickedColor = colors[randomValue(arrLength)];
+        var answer = prompt("thinking of","");
+        function colorPicker(response){
+            var mySentence = document.createElement("p");
+            if (response == pickedColor){
+                mySentence.innerHTML ='You are right!';
+            }else{
+                mySentence.innerHTML = 'Try again!';
+            }
+            var output = document.getElementById("input").appendChild(mySentence);
+            return output;
 
         }
         console.log(colorPicker(answer));
