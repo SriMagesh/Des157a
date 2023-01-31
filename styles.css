@@ -13,7 +13,6 @@ h1{
     
     font-family: 'Melodrama-Medium';
     font-weight: 500;
-    font-display: swap;
     font-style: normal;
     color: black;
     margin-bottom: -50px;
@@ -33,7 +32,7 @@ h1{
 }
 ul{
     list-style-type: none;
-    padding-left: 0px;
+    padding-left: 0;
     font-family: "articulat-cf", sans-serif;
     font-weight: 200;
     font-style: normal;
@@ -89,23 +88,23 @@ footer{
 }
 @keyframes slideLeft {
     0%{
-        margin-left: 0%;
+        margin-left: 0;
     }
     50%{
         margin-left: 80%;
     }
     100%{
-        margin-right: 0%;
+        margin-right: 0;
     }
 }
 @keyframes slideRight {
     0%{
-        margin-right: 0%;
+        margin-right: 0;
     }
     50%{
         margin-right: 80%;
     }
     100%{
-        margin-right: 0%;
+        margin-right: 0;
     }
 }
