@@ -17,19 +17,6 @@
             return(int);
         }
 
-        function colorPicker(response){
-            var mySentence = document.createElement("p");
-            if (response == pickedColor){
-                mySentence.innerHTML ='You are right!';
-            }else{
-                mySentence.innerHTML = 'Try again!';
-            }
-            var Brendan = document.getElementById("input").appendChild(mySentence);
-            return Brendan;
-
-        }
-
-
         const colors = ['red','yellow','green', 'blue'];
         var arrLength = colors.length;
         var answer = prompt("thinking of","");
