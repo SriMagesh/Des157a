@@ -24,7 +24,8 @@ h1{
 .banner{
     display: flex;
     justify-content: space-between;
-    background-color: #B4321B;
+    /* background-color: #B4321B; */
+    background-color: blue;
     border: 1rem solid;
     margin-right: auto;
     margin-bottom: 75px;
