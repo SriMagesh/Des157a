@@ -78,19 +78,19 @@ main{
 
 }
 #img1{
-    background-image: url(/images/Clubs.png);
+    background-image: url(images/Clubs.png);
     background-repeat: no-repeat;
 }
 #img2{
-    background-image: url(/images/Diamonds.png);
+    background-image: url(images/Diamonds.png);
     background-repeat: no-repeat;
 }
 #img3{
-    background-image: url(/images/Hearts.png);
+    background-image: url(images/Hearts.png);
     background-repeat: no-repeat;
 }
 #img4{
-    background-image: url(/images/Spades.png);
+    background-image: url(images/Spades.png);
     background-repeat: no-repeat;
 }
 
