@@ -1,12 +1,22 @@
+#wrapper {
+    max-width: 1200px;
+    min-height: 750px;
+    margin: auto;
+}
 body{
     background-color:#EBEBEB;
     font-family: "cabrito-didone-normal", sans-serif;
     font-weight: 400;
     font-style: normal;
-    padding: 50px;
+    padding: 0px 12px;
 }
 h1{
     font-size: 24px;
+}
+h2{
+    font-family: 'Melodrama-Medium';
+    font-weight: 500;
+    font-style: normal;
 }
 .top{
     display: flex;
@@ -24,9 +34,8 @@ h1{
 .banner{
     display: flex;
     justify-content: space-between;
-    background-color: #B4321B;
+    background-color: #ECB21F;
     border: 1rem solid;
-    margin-right: auto;
     margin-bottom: 75px;
     padding: 50px;
 }
@@ -44,12 +53,12 @@ a{
     text-decoration: none;  
     color: white
 }
-li:hover{
-    list-style-type: circle;
-    color:white;
+a:hover{
+    color:#ECB21F;
 }
 section{
-    padding: 100px 75px;
+    flex:1;
+    margin: 10px;
     flex-direction: column;
     background-color: #B4321B;
     border-radius: 20px;
@@ -68,9 +77,23 @@ main{
     justify-content: space-between;
 
 }
-.back_1{
-    background-image: url(/images/Diamonds.png);
+#img1{
+    background-image: url(/images/Clubs.png);
+    background-repeat: no-repeat;
 }
+#img2{
+    background-image: url(/images/Diamonds.png);
+    background-repeat: no-repeat;
+}
+#img3{
+    background-image: url(/images/Hearts.png);
+    background-repeat: no-repeat;
+}
+#img4{
+    background-image: url(/images/Spades.png);
+    background-repeat: no-repeat;
+}
+
 .banner:hover .leftImg{
     animation-duration: 10s;
     animation-name: slideLeft;
@@ -86,6 +109,40 @@ footer{
     display: flex;
     justify-content: space-between;
 }
+
+.card {
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    height: 250px;
+
+}
+.card:hover .back {
+    transform: rotateY(180deg);
+}
+.card:hover .front {
+    transform: rotateY(0deg);
+}
+.back, .front {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; 
+    transition: 1.5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+}
+.back {
+    transform: rotateY(0deg);
+    color: black;
+
+}
+.front{
+    padding-top: 25px;
+    transform: rotateY(-180deg);
+}
+
 @keyframes slideLeft {
     0%{
         margin-left: 0;
