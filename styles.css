@@ -77,23 +77,6 @@ main{
     justify-content: space-between;
 
 }
-#img1{
-    background-image: url(images/Clubs.png);
-    background-repeat: no-repeat;
-}
-#img2{
-    background-image: url(images/Diamonds.png);
-    background-repeat: no-repeat;
-}
-#img3{
-    background-image: url(images/Hearts.png);
-    background-repeat: no-repeat;
-}
-#img4{
-    background-image: url(images/Spades.png);
-    background-repeat: no-repeat;
-}
-
 .banner:hover .leftImg{
     animation-duration: 10s;
     animation-name: slideLeft;
@@ -136,6 +119,7 @@ footer{
 .back {
     transform: rotateY(0deg);
     color: black;
+    overflow: hidden;
 
 }
 .front{
