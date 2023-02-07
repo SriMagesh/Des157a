@@ -1,0 +1,15 @@
+h1{
+    text-align: center;
+}
+li{
+    padding: 10px;
+    text-align: center;
+    list-style: none;
+}
+main{
+    border-radius: 20px;
+    height: 500px;
+    width: 2000px;
+    background-image: url(./images/BgImage.png);
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <link href="styles.css" rel="stylesheet">
+  <script src="script.js" defer></script>
+  <title>Challenge: Mad Libs</title>
+ </head>
+ <body>
+    <main>
+        <header>
+            <h1>Make your Pokemon</h1>           
+        </header>
+        
+        <ul>
+            <li>Name: <input type="text" id="noun"></li>
+            <li>Pokemon Type: <input type="text" id="adjective"></li>
+            <li>Number: <input type="text" id="number"></li>
+            <li>Move 1: <input type="text" id="move_1"></li>
+            <li>Move Description: <input type="text" id="des_1"></li>
+            <li>Move 2: <input type="text" id="move_2"></li>
+            <li>Move Description: <input type="text" id="des_2"></li>
+        </ul>
+
+    </main> 
+     
+    <button id="lib-button">Lib it!</button>
+      
+    <p>Generated story: 
+    <span id="story"></span>
+    </p>
+ 
+    <script>
+        var libButton = document.getElementById('lib-button');
+        var libIt = function() {
+            var storyDiv = document.getElementById("story");
+            storyDiv.innerHTML = "";
+        };
+        libButton.addEventListener('click', libIt);
+        
+    </script>
+  
+ </body>
+</html>
