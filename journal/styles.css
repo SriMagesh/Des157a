@@ -1,0 +1,30 @@
+body{
+    font-family: 'Melodrama-Medium';
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    border-color: black;
+}
+.banner{
+    padding: 50px 100px;
+    border-radius: 20px;
+    margin: 75px 100px;
+    background-color: #ECB21F;
+    border: 20px solid black;
+}
+h1{
+    color:  white;
+    font-weight: 700;
+}
+h2{
+    font-weight: 700;
+    color: #f1cf76;
+}
+article{
+    padding: 50px 100px;
+    border-radius: 20px;
+    margin: 100px 300px;
+    color: rgba(255, 255, 255, 0.897);
+    background-color: #B4321B;
+    border: 20px solid black;
+}
