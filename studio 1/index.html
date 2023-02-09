@@ -1,44 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
  <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.typekit.net/fan7kmz.css">
   <link href="styles.css" rel="stylesheet">
   <script src="script.js" defer></script>
   <title>Challenge: Mad Libs</title>
  </head>
  <body>
+    <div class="border">
     <main>
-        <header>
-            <h1>Make your Pokemon</h1>           
-        </header>
-        
-        <ul>
-            <li>Name: <input type="text" id="noun"></li>
-            <li>Pokemon Type: <input type="text" id="adjective"></li>
-            <li>Number: <input type="text" id="number"></li>
-            <li>Move 1: <input type="text" id="move_1"></li>
-            <li>Move Description: <input type="text" id="des_1"></li>
-            <li>Move 2: <input type="text" id="move_2"></li>
-            <li>Move Description: <input type="text" id="des_2"></li>
-        </ul>
+            <div class="screen">
+                <header>
+                    <h1>_Pokedex</h1>
+                    <img src="./images/pixil-frame-0.png" alt="pokemon"> 
+                </header>
+                <div class="inner">
+                    <form id="myform">
+                        <label for="name" style="color: #EE8E8E">What's your name?</label>
+                        <input type="text" id="name">
+                        
+                        <label for="type" style="color:#FDF39E">What's your type?</label>
+                        <input type="text" id="type">
+                        
+                        <label for="number" style="color:#BAC5FF">What’s your favorite number from 1 - 10?:</label>
+                        <input type="text" id="number">
+            
+                        <label for="move1" style="color:#EAADFF">First move’s name:</label>
+                        <input type="text" id="move1">
 
+                        <label for="move1_des" style="color:#D1FFAD">Second move’s description:</label>
+                        <input type="text" id="move1_des">
+
+                        <label for="move2" style="color:#ADFFFA">Second move’s name:</label>
+                        <input type="text" id="move2">
+
+                        <label for="move2_des" style="color:#FFADD0">Second move’s description:</label>
+                        <input type="text" id="move2_des">
+
+                    </form>
+
+                </div>
+
+
+            <!-- <form>
+                <label for="noun1">Provide a Noun</label>
+                <input type="text" id="noun1">
+                
+                <label for="noun2">Provide a Another Noun</label>
+                <input type="text" id="noun2">
+                
+                <label for="adj">Provide an Adjective</label>
+                <input type="text" id="adj">
+    
+                <label for="verb">Provide a Verb</label>
+                <input type="text" id="verb">
+    
+                <input type="submit" value="send">
+            </form> -->
+        </div>
+        <div class="button">
+            <input type="submit" class="submit" value="send">
+        </div>
     </main> 
-     
-    <button id="lib-button">Lib it!</button>
-      
-    <p>Generated story: 
-    <span id="story"></span>
-    </p>
- 
-    <script>
-        var libButton = document.getElementById('lib-button');
-        var libIt = function() {
-            var storyDiv = document.getElementById("story");
-            storyDiv.innerHTML = "";
-        };
-        libButton.addEventListener('click', libIt);
-        
-    </script>
-  
+    </div>
  </body>
 </html>
