@@ -4,14 +4,15 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.typekit.net/fan7kmz.css">
   <link href="styles.css" rel="stylesheet">
   <script src="script.js" defer></script>
   <title>Challenge: Mad Libs</title>
  </head>
  <body>
-    <div class="border">
     <main>
+        <div class="console">
             <div class="screen">
                 <header>
                     <h1>_Pokedex</h1>
@@ -19,52 +20,55 @@
                 </header>
                 <div class="inner">
                     <form id="myform">
-                        <label for="name" style="color: #EE8E8E">What's your name?</label>
-                        <input type="text" id="name">
+                        <label for="name" class="red">What's your name?</label>
+                        <input type="text" id="name" required>
                         
-                        <label for="type" style="color:#FDF39E">What's your type?</label>
-                        <input type="text" id="type">
+                        <label for="type" class="yellow">Choose your type?</label>
+                        <input type="text" id="type" required>
                         
-                        <label for="number" style="color:#BAC5FF">What’s your favorite number from 1 - 10?:</label>
-                        <input type="text" id="number">
+                        <label for="number" class="blue">Favorite number from 1 - 10?:</label>
+                        <input type="text" id="number" required>
             
-                        <label for="move1" style="color:#EAADFF">First move’s name:</label>
-                        <input type="text" id="move1">
+                        <label for="move1" class="purple">First move’s name:</label>
+                        <input type="text" id="move1" required>
 
-                        <label for="move1_des" style="color:#D1FFAD">Second move’s description:</label>
-                        <input type="text" id="move1_des">
+                        <label for="move1_des" class="green">First move’s description:</label>
+                        <input type="text" id="move1_des" required>
 
-                        <label for="move2" style="color:#ADFFFA">Second move’s name:</label>
-                        <input type="text" id="move2">
+                        <label for="move2" class="cyan">Second move’s name:</label>
+                        <input type="text" id="move2" required>
 
-                        <label for="move2_des" style="color:#FFADD0">Second move’s description:</label>
+                        <label for="move2_des" class="pink">Second move’s description:</label>
                         <input type="text" id="move2_des">
-
+                        <input type="submit" class="submit" value="send" required>
+                        
                     </form>
 
                 </div>
-
-
-            <!-- <form>
-                <label for="noun1">Provide a Noun</label>
-                <input type="text" id="noun1">
-                
-                <label for="noun2">Provide a Another Noun</label>
-                <input type="text" id="noun2">
-                
-                <label for="adj">Provide an Adjective</label>
-                <input type="text" id="adj">
-    
-                <label for="verb">Provide a Verb</label>
-                <input type="text" id="verb">
-    
-                <input type="submit" value="send">
-            </form> -->
+            </div>
         </div>
-        <div class="button">
-            <input type="submit" class="submit" value="send">
-        </div>
+       
+       
+        <section id="overlay" class="hidden">
+            <div class="overall">
+                <div class="output">
+                    <h2 id="output_name">Hi</h2>
+                    <article id="madlib"></article>
+                    <button class="close">close</button>
+                </div>
+                <div class="card" >
+                    <img src="images/BgImage.png" alt="cardBG" class="cardBg">
+                    <div id="outputPokemon">
+                        <p><span id="pName">Sri</span> <span id="pHP">HP</span><span id="pScore">80</span></p>
+                        <img src="images/Pokemon 2.png" alt="cardPic" class="cardPic">
+                        <p><span id="pMove1">Sri</span> <span id="pDamage">80</span></p>
+                        <p><span id="pMove1_des">Yes</span></p>
+                        <p><span id="pMove2">Sri</span> <span id="pDamage">80</span></p>
+                        <p><span id="pMove2_des">Yes</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main> 
-    </div>
  </body>
 </html>
