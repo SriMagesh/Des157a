@@ -49,12 +49,12 @@
         let pink = move1_des.fontcolor('#FFADD0');
 
 
-        let myText = `Hi, my name is ${red}, and I’m a pokemon. All pokemon’s have a type. My type is ${yellow}, and my favorite number is ${green}. When I’m in danger, I use these two moves to defend myself. My first move ${blue} is a move that ${purple}, and deals 180 damage. The second move I use to protect myself is ${cyan}. This move ${pink} and it deals 0 damage...`;
+        let myText = `Hi, my name is ${red}, and I’m a pokemon. All pokemon’s have a type. My type is ${yellow}, and my favorite number is ${green}. When I’m in danger, I use these two moves to defend myself. My first move ${blue} is a move that ${purple}. The second move I use to protect myself is ${cyan}. This move ${pink}, and I only use it when I need to!`;
         const myArticle = document.querySelector('#madlib');
         myArticle.style.fontSize = 'x-large';
         myArticle.innerHTML = myText;
-        const pDamage = document.querySelector('#pDamage');
-        pDamage.innerHTML = (Math.floor(Math.random() * 23) + 1) * 10;
+
+
         const pName = document.querySelector('#pName');
         pName.innerHTML = name;
         const pMove = document.querySelector('#pMove1');
@@ -70,7 +70,11 @@
         pMove2_des.style.fontSize = 'small';
         pMove2_des.style.fontWeight = '400';
         pMove.innerHTML = move1.value.fontcolor('black');
-    
+        
+        const pDamage = document.querySelector('#pDamage').value;
+        const pDamage2 = document.querySelector('#pDamage2').value;
+        pDamage.innerHTML = (Math.floor(Math.random() * 23) + 1) * 10;
+        pDamage2.innerHTML = (Math.floor(Math.random() * 23) + 1) * 10;
 
         const pScore = document.querySelector('#pScore');
         pMove_des.innerHTML = move1_des.value.fontcolor('black');
