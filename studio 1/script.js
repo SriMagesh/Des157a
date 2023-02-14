@@ -49,7 +49,7 @@
         let pink = move1_des.fontcolor('#FFADD0');
 
 
-        let myText = `Hi, my name is ${red}, and I’m a pokemon. All pokemon’s have a type. My type is ${yellow}. When most people see me, they see blue. My favorite number is ${green}. When I’m in danger, I use these two moves to defend myself. My first move ${blue} is a move that ${purple}, and deals 180 damage. The second move I use to protect myself is ${cyan}. This move ${pink} and it deals 0 damage...`;
+        let myText = `Hi, my name is ${red}, and I’m a pokemon. All pokemon’s have a type. My type is ${yellow}, and my favorite number is ${green}. When I’m in danger, I use these two moves to defend myself. My first move ${blue} is a move that ${purple}, and deals 180 damage. The second move I use to protect myself is ${cyan}. This move ${pink} and it deals 0 damage...`;
         const myArticle = document.querySelector('#madlib');
         myArticle.style.fontSize = 'x-large';
         myArticle.innerHTML = myText;
