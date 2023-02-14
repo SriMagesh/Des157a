@@ -45,8 +45,8 @@
         let green = number.fontcolor('#BAC5FF');
         let blue = move1.fontcolor('#EAADFF');
         let purple = move1_des.fontcolor('#D1FFAD');
-        let cyan = move1_des.fontcolor('#ADFFFA');
-        let pink = move1_des.fontcolor('#FFADD0');
+        let cyan = move2.fontcolor('#ADFFFA');
+        let pink = move2_des.fontcolor('#FFADD0');
 
 
         let myText = `Hi, my name is ${red}, and I’m a pokemon. All pokemon’s have a type. My type is ${yellow}, and my favorite number is ${green}. When I’m in danger, I use these two moves to defend myself. My first move ${blue} is a move that ${purple}. The second move I use to protect myself is ${cyan}. This move ${pink}, and I only use it when I need to!`;
