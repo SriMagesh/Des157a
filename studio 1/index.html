@@ -24,8 +24,12 @@
                         <input type="text" id="name" required>
                         
                         <label for="type" class="yellow">Choose your type?</label>
-                        <input type="text" id="type" required>
-                        
+                        <select name="type" id="type" required>
+                            <option value="-" id="type"></option>
+                            <option value="fire" id="type">fire</option>
+                            <option value="water" id="type">water</option>
+                            <option value="electric" id="type">electric</option>
+                        </select>
                         <label for="number" class="blue">Favorite number from 1 - 10?:</label>
                         <input type="text" id="number" required>
             

@@ -58,11 +58,11 @@ li{
     margin-right: 100px;
     font-size: 18px;
 }
-#myform input{
+#myform input,  select{
     display: flex;
     margin: 5px 0px;
 }
-input{
+input, select{
     font-family: lores-12, sans-serif;
     font-style: normal;
     font-weight: 400;
