@@ -1,5 +1,7 @@
 
 (function(){
+    'use strict';
+    console.log('reading js')
 
     const scrollContainer = document.querySelector("main");
 
