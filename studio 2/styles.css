@@ -1,0 +1,108 @@
+html,
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+main {
+  overflow-x: hidden;
+  display: flex;
+  position: relative;
+}
+
+h1 {
+    
+    margin: 0;
+    margin: auto;
+    font-family: "futura-pt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 64px;
+    color: white;
+;
+    text-align: center;
+}
+p{
+    margin: 0;
+    margin: auto;
+    font-family: "futura-pt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+    color: rgba(255, 255, 255, 0.782);
+
+}
+.title{
+    position: absolute;
+    padding-top: 400px;
+}
+.des1{
+    padding-top: 550px;
+}
+.title2{
+    padding-top: 500px;
+}
+.title3{
+    padding-bottom: 600px;
+}
+.title4{
+    padding-bottom: 200px;
+}
+.image1{
+    position: absolute;
+    margin-left: 900px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px white;
+    transition: transform 0.5s ease;
+}
+.image1:hover{
+    transform: scale(1.2); 
+}
+.image-frame {
+    width: 300px; /* Set the width of the frame */
+    height: 300px; /* Set the height of the frame */
+    overflow: hidden; /* Hide any overflow */
+}
+  
+.image2{
+    position: absolute;
+    margin-right: 700px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px white;
+    transition: transform 0.5s ease;
+}
+.image3{
+    position: absolute;
+    margin-right:800px;
+    margin-top: 100px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px white;
+    transition: transform 0.5s ease;
+}
+section {
+  min-width: 110vw;
+  min-height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+background-color: black;
+}
+
+.frame1{
+    background-image: url(./images/StyleFrame1.png);
+    background-repeat: no-repeat;
+}
+.frame2{
+    background-image: url(./images/Styleframe2.png);
+    background-repeat: no-repeat;
+}
+.frame3{
+    background-image: url(./images/StyleFrame3.png);
+    background-repeat: no-repeat;
+}
+.frame4{
+    background-image: url(./images/StyleFrame4.png);
+    background-repeat: no-repeat;
+}
+
