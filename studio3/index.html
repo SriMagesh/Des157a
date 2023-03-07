@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of PIG</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/hhn7ftc.css">
+	<link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <button id="howTo">Instructions</button>
+        <section>
+        
+            <div class="highlight">
+                <!-- <h1> A Game of PIG</h1> -->
+                <div class="scroll">
+                    <p> // A Game of Pig \\ // A Game of Pig \\ // A Game of Pig \\ //A Game of Pig \\ // A Game of Pig \\ // A Game of Pig \\ // A Game of Pig \\ // A Game of Pig \\ // A Game of Pig \\ // A Game of Pig \\ // A Game of Pig \\ //A Game of Pig \\ // A Game of Pig \\ // A Game of Pig \\ // A Game of Pig \\ // A Game of Pig \\
+                    </p>
+                </div>
+        
+            </div>
+            <form id="myform">
+                <label for="p1" class="c1">Player1 Name: </label>
+                <input type="text" id="p1" required> <br>
+
+                <label for="bg1" class="c2">Background Color: </label>
+                <input type="color" id="color1" value="#000000"> <br> <br>  <br> 
+
+                <label for="p2" class="c3">Player2 Name: </label>
+                <input type="text" id="p2" required> <br>
+                <label for="bg2" class="c4">Background Color: </label>
+                <input type="color" id="color2" value="#FFFFFF"> <br>
+                <input type="submit" class="submit" value="Play">
+            
+
+
+            </form>
+        </section>
+        <section id="instructions" class="hidden">
+            <article>
+                <p>In this version of Pig, two players take turns rolling a single die as many times as they want, adding each roll to their score. The player has either the option to roll or to pass. If either die rolls a 1, the turn swtiches over to the other player. The end goal is to be the first player to reach 30 points to win. <br> <br> Oh, and if you roll two "ones" (snake eyes), your current score gets zeroed out. So don’t do that.</p>
+                <button class="close">close</button>
+            </article>
+        </section>
+        <section id="overlay" class="hidden">
+            <div class="overall">
+                <!-- Player1 Section -->
+                <div class="pSection1">
+                    <p class="output_name1">name1</p>
+                    <p class="score1"> 0 </p>
+                    <p class="rem1">30 more points to win.</p>
+                    <div id="action1" class="hidden">
+                        <button id="roll1">Roll Dice</button> <br>
+                        <button id="pass1">pass</button>
+                    </div>
+
+                </div>
+
+                <!-- Dice output -->
+                <div class="output" >
+                    <img src="/studio3/images/Roll 6.jpg" alt="first die" class="die1">
+                    <img src="/studio3/images/Roll 6.jpg" alt="first die" class="die2">
+                    <p class="winStatement"></p>
+                </div>
+
+                <!-- Player2 Section -->
+                <div class="pSection2">
+                    <p class="output_name2">name2</p>
+                    <p class="score2"> 0 </p>
+                    <p class="rem2">30 more points to win.</p>
+                    <div id="action2" class="hidden">
+
+                        <button id="roll2">Roll Dice</button> <br>
+                        <button id="pass2">pass</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+            
+    </main>
+    <!-- <div id="gamecontrol">
+        <h2>Start a Game</h2>
+        <button id="startgame">Randomly Pick the First Player, and Start the Game</button>
+    </div>
+
+    <div id="game"></div>
+    <div id="actions"></div>
+    <div id="score"></div> -->
+</body>
+</html>
