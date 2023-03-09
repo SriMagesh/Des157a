@@ -27,7 +27,7 @@
     });  
     // necessary gameData
     const gameData = {
-        dice: ['/studio3/images/Roll 1.jpg','/studio3/images/Roll 2.jpg','/studio3/images/Roll 3.jpg','/studio3/images/Roll 4.jpg','/studio3/images/Roll 5.jpg','/studio3/images/Roll 6.jpg'],
+        dice: ['images/roll1.jpg','images/roll2.jpg','images/roll3.jpg','images/roll4.jpg','images/roll5.jpg','images/roll6.jpg'],
         players: ['player 1','player 2'],
         score: [0,0],
         roll1: 0,
