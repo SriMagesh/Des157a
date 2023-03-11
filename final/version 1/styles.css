@@ -62,8 +62,11 @@ p{
 .image1{
     height: 300px;
     width: 300px;
-    position: relative;
-}
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+  }
 .image-frame {
     width: 300px; /* Set the width of the frame */
     height: 300px; /* Set the height of the frame */
@@ -104,6 +107,7 @@ section:last-child{
 .frame1{
     /* background-image: url(./images/StyleFrame1.png); */
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 .frame2{
     /* background-image: url(./images/Styleframe2.png); */
