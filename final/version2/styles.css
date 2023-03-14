@@ -63,16 +63,16 @@ p{
     height: 300px;
     width: 300px;
     position: relative;
-    top: 0;
-    left: 0;
-    transition: all 0s ;
+    top: 100px;
+    margin-left: 40%;
+    /* transition: all 0s ; */
   }
 .image2{
     position: absolute;
     margin-right: 700px;
     border-radius: 20px;
     box-shadow: 0 0 20px white;
-    transition: transform 0.5s ease;
+    /* transition: transform 0.5s ease; */
 }
 .image3{
     height: 275px;
@@ -81,16 +81,16 @@ p{
     position: relative;
     top: 500;
     left: 1100;
-    transition: all 0s ;
+    /* transition: all 0s ; */
 }
 .image4{
     height: 175px;
     width: 200px;
-    rotate: 3deg;
-    position: absolute;
+    rotate: 10deg;
+    position: relative;
     top: 500;
     left: 1100;
-    transition: all 0s ;
+    /* transition: all 0s ; */
 }
 .image5{
     margin-top: 100px;
@@ -99,7 +99,7 @@ p{
     position: relative;
     top: 0;
     left: 0;
-    transition: all 0s ;
+    /* transition: all 0s ; */
   }
 .image6{
     margin-bottom: 100px;
@@ -109,7 +109,7 @@ p{
     position: relative;
     top: 0;
     left: 0;
-    transition: all 0s ;
+    /* transition: all 0s ; */
   }
   .image7{
     margin-bottom: 100px;
@@ -118,7 +118,7 @@ p{
     position: relative;
     top: 0;
     left: 0;
-    transition: all 0s ;
+    /* transition: all 0s ; */
   }
 section {
   min-width: 85vw;
@@ -147,6 +147,7 @@ section:last-child{
 }
 .frame2{
     /* background-image: url(./images/Styleframe2.png); */
+    position: relative;
     background-repeat: no-repeat;
     overflow: hidden;
 }
@@ -164,7 +165,10 @@ section:last-child{
 .imgDiv{
     /* width: 100%; */
     /* background-color: #293276; */
-    margin-top: 65px;
+    background-image: url('images/skyline1.svg');
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-top: -50px;
 }
 .imgDiv2{
     background-image: url('images/slope.svg');
@@ -191,8 +195,8 @@ section:last-child{
 }
 .hex1{
     position: absolute;
-    left: 10%;
-    top: 25%;
+    left: 15%;
+    top: 33%;
     height: 115px;
     width: 100px;
     animation: rotate 5s linear infinite;

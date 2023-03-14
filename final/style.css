@@ -2,7 +2,7 @@ body{
     font-family: 'Melodrama-Medium';
     font-weight: 500;
     font-style: normal;
-    text-align: center;
+    /* text-align: center; */
     border-color: black;
 }
 .banner{
@@ -27,4 +27,8 @@ article{
     color: rgba(255, 255, 255, 0.897);
     background-color: #B4321B;
     border: 20px solid black;
+}
+.image1{
+    height: 300px;
+    width: 300px;
 }

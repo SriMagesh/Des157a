@@ -35,8 +35,8 @@
         image.style.left = `${scrollContainer.scrollLeft}px`;
         image3.style.left = `${scrollContainer.scrollLeft - 480}px`;
         image3.style.top = `${900 - scrollContainer.scrollLeft }px`;
-        image4.style.left = `${scrollContainer.scrollLeft + 550}px`;
-        image4.style.top = `${1550 - scrollContainer.scrollLeft}px`;
+        image4.style.left = `${scrollContainer.scrollLeft - 1200}px`;
+        image4.style.top = `${1100 - scrollContainer.scrollLeft}px`;
         image5.style.left = `${2650 - scrollContainer.scrollLeft}px`;
         image6.style.left = `${scrollContainer.scrollLeft - 3200}px`;
         image7.style.left = `${scrollContainer.scrollLeft - (2700 * 1.2)}px`;
