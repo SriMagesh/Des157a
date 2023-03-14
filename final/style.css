@@ -2,8 +2,11 @@ body{
     font-family: 'Melodrama-Medium';
     font-weight: 500;
     font-style: normal;
-    /* text-align: center; */
+    text-align: center;
     border-color: black;
+}
+li{
+    list-style-type: none;
 }
 .banner{
     padding: 50px 100px;
