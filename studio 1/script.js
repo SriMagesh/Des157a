@@ -34,7 +34,7 @@
         const randomIndex = Math.floor(Math.random() * number) % arrayOfimages.length;
         const myPic = document.querySelector('.cardPic');
         myPic.src = arrayOfimages[randomIndex];
-        console.log(myPic);
+        console.log(myPic.src);
 
         const move1 = document.querySelector('#move1').value;
         const move1_des = document.querySelector('#move1_des').value;
