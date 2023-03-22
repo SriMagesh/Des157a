@@ -1,6 +1,7 @@
 (function () {
 	"use strict";
 	console.log("reading js");
+    alert('set the viewport settings to 1200 by 750 px for best experience :)');
 	const image = document.querySelector(".image1");
     const image2 = document.querySelector(".sri1");
     const image3 = document.querySelector(".image3");
